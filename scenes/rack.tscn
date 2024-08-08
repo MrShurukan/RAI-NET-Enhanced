@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk0p57ism5rrv"]
+
+[ext_resource type="PackedScene" uid="uid://cd8kgwanq85po" path="res://scenes/rack_panel.tscn" id="1_ry2wd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr0es"]
+bg_color = Color(0.0941176, 0.0980392, 0.113725, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id="Theme_vs23t"]
+Panel/styles/panel = SubResource("StyleBoxFlat_tr0es")
+
+[node name="Rack" type="AspectRatioContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+ratio = 9.307
+stretch_mode = 0
+
+[node name="Panel" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 2
+theme = SubResource("Theme_vs23t")
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 1
+theme_override_constants/v_separation = 1
+columns = 4
+
+[node name="RackPanel1" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel2" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel3" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel4" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel5" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel6" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel7" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RackPanel8" parent="Panel/GridContainer" instance=ExtResource("1_ry2wd")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

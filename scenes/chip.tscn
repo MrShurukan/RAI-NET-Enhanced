@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciq5d7occ7sd4"]
+
+[ext_resource type="Texture2D" uid="uid://b8x4t861rndca" path="res://images/Белая фишка.png" id="1_3wybs"]
+[ext_resource type="Script" path="res://scenes/chip.gd" id="2_v2gia"]
+
+[node name="Chip" type="TextureRect"]
+self_modulate = Color(0.243137, 0.709804, 0.0784314, 1)
+offset_right = 100.0
+offset_bottom = 100.0
+texture = ExtResource("1_3wybs")
+expand_mode = 1
+script = ExtResource("2_v2gia")
+player1_color = Color(0.878431, 0.368627, 0, 1)
+player2_color = Color(0.243137, 0.709804, 0.0784314, 1)
+player = 1

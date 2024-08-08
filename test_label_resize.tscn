@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpawq5usgkhg2"]
+
+[ext_resource type="Texture2D" uid="uid://dwjl4l36rek1o" path="res://images/LCD Screen.png" id="1_7b4cg"]
+[ext_resource type="Script" path="res://AutoSizeLabel.gd" id="2_wjmri"]
+
+[node name="Control" type="AspectRatioContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -773.0
+offset_bottom = -561.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 4.4412
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_7b4cg")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 44
+text = "ASDASDASDASDA"
+clip_text = true
+script = ExtResource("2_wjmri")

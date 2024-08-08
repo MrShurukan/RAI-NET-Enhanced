@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcsk0lso62fs7"]
+
+[ext_resource type="Script" path="res://scenes/square.gd" id="1_i8web"]
+
+[node name="Square" type="ColorRect"]
+offset_right = 105.0
+offset_bottom = 105.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.415686, 0.415686, 0.415686, 1)
+script = ExtResource("1_i8web")
+dark_color = Color(0.184314, 0.184314, 0.184314, 1)
+light_color = Color(0.415686, 0.415686, 0.415686, 1)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
